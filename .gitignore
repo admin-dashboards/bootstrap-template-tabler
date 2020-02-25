@@ -21,3 +21,4 @@ node_modules/
 /svg-tmp/
 /components/
 /percy.sh
+config.bat
