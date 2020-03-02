@@ -42,3 +42,22 @@ body.no-transitions * {
   top: 0;
   margin-bottom: 1rem;
 }
+
+// Quill
+
+$quill-fonts:(
+  georgia: "Georgia",
+  times-new-roman: "Times New Roman",
+  courier-new: "Courier New"
+);
+
+@each $var, $var2 in $quill-fonts {
+  .ql-font-#{$var} {
+    font-family: $var2, ;
+  }
+  .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=#{$var}]::before,
+  .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=#{$var}]::before {
+    content: '#{$var2}';
+    font-family: '#{$var2}', ;
+  }
+}

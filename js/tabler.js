@@ -2,6 +2,8 @@
 
 import {CountUp} from "countup.js";
 import noUiSlider from 'nouislider';
+import Quill from "quill";
+window['Quill'] = Quill;
 
 (function () {
 	/**

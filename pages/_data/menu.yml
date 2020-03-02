@@ -221,6 +221,9 @@ docs:
     tabs: 
       title: Tabs
       url: docs/tabs.html
+    text-editor:
+      title: Text editor
+      url: docs/text-editor.html
     timelines: 
       title: Timelines
       url: docs/timelines.html

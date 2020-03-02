@@ -3,8 +3,8 @@
 {% assign demo-code = code %}
 {% assign demo-code = demo-code | replace_regex: '\{% (end)?hide %\}', '' %}
 
-<div class="example no_toc_section{% if include.centered %} example-centered{% endif %}{% if include.columns %} example-bg{% endif %}">
-	<div class="example-content">
+<div class="example no_toc_section{% if include.centered %} example-centered{% endif %}{% if include.columns %} example-bg{% endif %}{% if include.class %} {{include.class}}{% endif %}">
+	<div class="example-content {% if include.content-class %} {{include.content-class}}{% endif %}">
 		{% if include.max-width %}<div style="max-width: {{ include.max-width }}">{% endif %}
 		{% if include.wrapper %}<div class="{{ include.wrapper }}">{% endif %}
 		{% if include.columns %}<div class="example-column example-column-{{ include.columns }}">{% endif %}
